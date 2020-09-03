@@ -1,0 +1,312 @@
+
+
+.header__wrapper {
+  background-color: #27262A;
+  text-align: center;
+
+  @media (min-width: 1200px) {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+
+
+  &-logo {
+    padding: 30px 15px;
+  }
+  &-logo:hover {
+      content: url("../dist/img/logo-white.svg");
+  }
+
+
+  &-title {
+    display: none;
+    @media (min-width: 481px) {
+      font-family: Lato;
+      font-weight: bold;
+      font-size: 24px;
+      text-transform: uppercase;
+      color: #8D81AC;
+      display: inline-block;
+    }
+
+    @media (min-width: 481px) {
+    }
+  }
+  &-title:hover {
+    color: #FFFFFF;
+  }
+
+  &-button{
+    background: #8D81AC;
+    border-radius: 40px;
+    padding: 11px 10px;
+    margin-left: 40px;
+
+    &-text {
+      font-family: Montserrat;
+      font-weight: bold;
+      font-size: 15px;
+      color: #FFFFFF;
+    }
+  }
+
+}
+.header-hr-item {
+  width: 26px;
+  height: 3px;
+  background: #FFFFFF;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+.header-hr-item-first {
+  width: 15px;
+  height: 3px;
+  background: #FFFFFF;
+  border-radius: 5px;
+}
+.header-wrapper-hr {
+  margin-left: 50px;
+}
+.header__fork {
+  background-image: url("../dist/img/header-bg-img.png");
+  background-position: center;
+  width: 100%;
+  background-size: cover;
+
+
+  @media (min-width: 1200px) {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  &-wrapper {
+    position: relative;
+    padding: 15px;
+    text-align: center;
+  }
+
+  &-title {
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 48px;
+    color: #FFFFFF;
+    text-align: center;
+    padding-top: 50px;
+    
+    @media (min-width: 481px) {
+      font-size: 72px;
+    }
+    @media (min-width: 1200px) {
+      font-size: 84px;
+    }
+  }
+
+  &-text {
+    font-family: Montserrat;
+    font-size: 18px;
+    text-align: center;
+    color: #8D81AC;
+    margin-top: 20px;
+    padding: 15px;
+
+    @media (min-width: 481px) {
+      font-size: 24px;
+      content: 'A real gamechanger in the world of web development';
+    }
+    @media (min-width: 1200px) {
+      font-size: 30px;
+    }
+
+  }
+
+  &-description {
+    font-family: Montserrat;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #848E97;
+    margin-top: 15px;
+
+    @media (min-width: 1200px) {
+      font-size: 16px;
+    }
+  }
+
+  &-button {
+    position: relative;
+    top: 38px;
+    margin-top: 400px;
+    background: #8D81AC;
+    border-radius: 40px;
+    padding: 15px 29px;
+
+    @media (min-width: 768px) {
+      padding: 23px 61px;
+    }
+    &-text {
+      font-family: Montserrat;
+      font-weight: bold;
+      font-size: 18px;
+      text-align: center;
+      color: #FFFFFF;
+    }
+
+    &-button:hover {
+      background: #FFFFFF;
+    }
+
+  }
+
+
+}
+
+
+.navbar {
+  display: inline-block;
+  &-wrap {
+
+
+    @media (min-width: 481px) {
+      display: block;
+      padding-bottom: 20px;
+      text-align: center;
+      margin-right: 30px;
+    }
+
+    @media (min-width: 1200px) {
+      margin-left: 40px;
+      text-align: right;
+    }
+  }
+  @media (min-width: 481px) {
+    &-item {
+      display: inline-block;
+      font-family: Montserrat;
+      font-weight: bold;
+      font-size: 16px;
+      margin-left: 47px;
+    }
+    &-link {
+      text-decoration: none;
+      color: #8D81AC;
+    }
+  }
+}
+
+.navbar {
+  margin-left: 50px;
+
+  &-link:hover {
+    color: #FFFFFF;
+  }
+
+}
+.menu__mobile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 32px;
+  top: 32px;
+  width: 32px;
+  height: 32px;
+
+  background-color: transparent;
+  cursor: pointer;
+  &-hr {
+    @include menu-hr;
+    &::after,
+    &::before {
+      display: block;
+      content: '';
+      @include menu-hr
+    }
+    &::before {
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+    &::after {
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+  }
+
+  @media (min-width: 481px) {
+    display: none;
+  }
+}
+
+.header-fork-button:hover {
+  background: #FFFFFF;
+}
+.header-fork-button-text:hover {
+  color: #8D81AC;
+
+};
+
+
+.close {
+  position: absolute;
+  top: 5px;
+  width: 32px;
+  height: 32px;
+}
+.close:hover {
+  opacity: 1;
+}
+.close:before, .close:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 33px;
+  width: 2px;
+  background-color: #FFFFFF;
+
+}
+.close:before {
+  transform: rotate(45deg);
+}
+.close:after {
+  transform: rotate(-45deg);
+}
+
+@media (max-width: 480px) {
+  .navbar-wrap {
+    position: absolute;
+    top: -1000px;
+    right: 20px;
+    width: 300px;
+    height: 300px;
+    background-color: #333333;
+
+  .navbar-item {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    text-align: left;
+    border-bottom: 2px solid #3B3B3B;
+  }
+  .navbar-link {
+    font-family: Montserrat;
+    font-size: 26px;
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+  }
+}
+.navbar-wrap.active {
+  top: 100px;
+}
+
+
+
+
+.wrapper {
+  background: #00CBF6;
+  width: 50%;
+  height: 20%;
+}
+
+
+

@@ -1,0 +1,13 @@
+@mixin flex-column($column, $space-between) {
+  display: flex;
+  flex-direction: $column;
+  justify-content: $space-between;
+}
+@mixin grid-column($column-count) {
+  display: grid;
+  grid-template-columns: repeat($column-count, 1fr);
+}
+@mixin menu-hr {
+  width: 26px;
+  border-top: 2px solid #ffffff;
+}

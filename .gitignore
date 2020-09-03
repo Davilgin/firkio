@@ -1,0 +1,7 @@
+#ignored main
+.idea/
+node_modules/
+package-lock.json
+dist/
+*.iml
+src/include/*

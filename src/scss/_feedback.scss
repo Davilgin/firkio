@@ -1,0 +1,123 @@
+
+.feedback {
+  margin: 72px 0 60px;
+  display: grid;
+  grid-auto-columns: auto;
+  margin: 0 auto;
+  padding: 15px;
+
+  &__title {
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.6;
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 60px;
+    
+    @media (min-width: 481px) {
+      font-size: 42px;
+      margin-top: 86px;
+    }
+
+    @media (min-width: 993px) {
+      font-size: 48px;
+      max-width: 807px;
+      margin: 0 auto;
+      margin-top: 110px;
+    }
+  }
+  &__content-wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+
+    @media (min-width: 481px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (min-width: 993px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  &__wrapper {
+    text-align: center;
+
+  }
+  &__image-wrapper {
+    margin-top: 88px;
+  }
+  &__image-wrapper-third {
+    margin-top: 58px;
+
+    @media (min-width: 993px) {
+      margin-top: 90px;
+    }
+  }
+  &__description {
+    font-family: Lato;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-top: 33px;
+    color: #FFFFFF;
+
+    @media (min-width: 481px) {
+      max-width: 350px;
+      text-align: center;
+    }
+    @media (min-width: 993px) {
+      margin-top: 37px;
+
+    }
+  }
+  &__description-third {
+    font-family: Lato;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-top: 22px;
+    color: #FFFFFF;
+  }
+  &__span {
+    display: block;
+
+    @media (min-width: 481px) {
+      display: inline-block;
+    }
+  }
+  &__footer {
+    font-family: Lato;
+    font-size: 14px;
+    color: #A291A5;
+    line-height: 1.6;
+    text-align: center;
+    margin-top: 37px;
+  }
+  &__hr {
+    max-width: 245px;
+    height: 2px;
+    background: #645766;
+    margin: 0 auto;
+    margin-top: 22px;
+
+    @media (min-width: 481px) {
+      max-width: 555px;
+    }
+
+    @media (min-width: 993px) {
+      max-width: 780px;
+    }
+  }
+}
+.feedback-bg {
+  background-image: url("../dist/img/feedback-bg.png");
+  width: 100%;
+  background-size: cover;
+  @media (min-width: 1200px) {
+    max-width: 1200px;
+  }
+
+}
+

@@ -1,0 +1,113 @@
+
+.description {
+  margin: 72px 0 60px;
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    max-width: 273px;
+    margin: 0 auto;
+    margin-bottom: 27px;
+    color: #635C73;
+    font-size: 26px;
+    font-family: $montserrat;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    @media (min-width: 481px) {
+      max-width: 600px;
+
+    }
+    @media (min-width: 768px) {
+      font-size: 42px;
+      line-height: 42px;
+    }
+    @media (min-width: 993px) {
+      max-width: 760px;
+      font-size: 54px;
+      line-height: 54px;
+    }
+  }
+
+  &__text {
+    max-width: 276px;
+    font-family: $lato;
+    font-size: 14px;
+    line-height: 20px;
+    color: $main-title;
+    text-align: center;
+    margin: 0 auto;
+    @media (min-width: 481px) {
+      max-width: 689px;
+      padding: 0 20px 0 21px;
+    }
+    @media (min-width: 768px) {
+      font-size: 21px;
+      line-height: 32px;
+      padding: 0;
+    }
+    @media (min-width: 993px) {
+      max-width: 861px;
+      font-size: 21px;
+      line-height: 32px;
+    }
+  }
+
+  &__button-wrapper {
+    display: flex;
+    margin-top: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+    @media (min-width: 993px) {
+      margin-top: 13px;
+    }
+  }
+
+  &__button-block {
+    display: flex;
+    margin-top: 20px;
+  }
+
+  &__button-left, &__button-right {
+    align-self: center;
+    color: #24292e;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 20px;
+    border: 1px solid rgba(27, 31, 35, .15);
+    border-radius: 6px;
+    vertical-align: middle;
+    box-sizing: border-box;
+    padding: 3px 12px;
+    background-color: #fafbfc;
+    box-shadow: 0 1px 0 rgba(27, 31, 35, .04), inset 0 1px 0 hsla(0, 0%, 100%, .25);
+    transition: background-color .2s cubic-bezier(.3, 0, .5, 1);
+  }
+
+  &__button-left {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    background-color: #f3f4f6;
+  }
+
+  &__button-left:hover {
+    background-color: #edeff2;
+  }
+
+  &__button-left div {
+    display: flex;
+  }
+
+  &__button-left svg {
+    align-self: center;
+    margin-right: 3px;
+  }
+
+  &__button-right {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    margin: 0 10px 0 0;
+    border-left: none;
+  }
+
+}
