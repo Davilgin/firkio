@@ -2,10 +2,10 @@
 
 .header__wrapper {
   background-color: #27262A;
+  width: 100%;
   text-align: center;
 
   @media (min-width: 1200px) {
-    max-width: 1200px;
     margin: 0 auto;
   }
   
@@ -76,7 +76,6 @@
 
 
   @media (min-width: 1200px) {
-    max-width: 1200px;
     margin: 0 auto;
   }
 
@@ -292,12 +291,21 @@
     font-size: 26px;
     color: #FFFFFF;
     text-decoration: none;
+
   }
   }
 }
 .navbar-wrap.active {
   top: 100px;
 }
+
+@media (min-width: 481px) {
+  .navbar-link{
+    font-size: 14px;
+  }
+
+}
+
 
 
 

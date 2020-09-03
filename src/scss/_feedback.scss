@@ -6,6 +6,11 @@
   margin: 0 auto;
   padding: 15px;
 
+  @media (min-width: 1200px) {
+    max-width: 1200px;
+  }
+
+
   &__title {
     font-family: Montserrat;
     font-weight: bold;
@@ -38,6 +43,7 @@
     @media (min-width: 993px) {
       grid-template-columns: repeat(3, 1fr);
     }
+
   }
   &__wrapper {
     text-align: center;
@@ -59,8 +65,8 @@
     font-weight: bold;
     font-size: 16px;
     line-height: 1.6;
-    margin-top: 33px;
     color: #FFFFFF;
+    margin: 33px auto;
 
     @media (min-width: 481px) {
       max-width: 350px;
@@ -113,11 +119,9 @@
 }
 .feedback-bg {
   background-image: url("../dist/img/feedback-bg.png");
+  background-position: center;
   width: 100%;
   background-size: cover;
-  @media (min-width: 1200px) {
-    max-width: 1200px;
-  }
 
 }
 
